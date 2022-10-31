@@ -24,7 +24,6 @@ typedef int (*Comparer) (const void *a, const void *b);
  */
 int my_comparer(const void *this, const void *that)
 {
-	//TODO: IMPLEMENT ME!
 	Process *p1;
 	Process *p2;
 	p1 = (Process *)this;

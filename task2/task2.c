@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* IMPLEMENT ME: Declare your functions here */
 int add (int a, int b);
 int subtract (int a, int b);
 int multiply (int a, int b);
@@ -10,15 +9,14 @@ int divide (int a, int b);
 
 int main (void)
 {
-	/* IMPLEMENT ME: Insert your algorithm here */
+	// array of function pointers
+	// read user input
+	// while user_input != 4
+	// evaulate array of function pointers[user_input]
 	int (*func_arr[])(int a, int b) = {add, subtract, multiply, divide};
 	int a, b;
 	a = 6;
 	b = 3;
-	// array of function pointers?
-	// read user input
-	// while user_input != 4
-	// evaulate array of function pointers[user_input]
 	int user_op;
 	user_op = -1;
 	
@@ -35,7 +33,6 @@ int main (void)
 	return 0;
 }
 
-/* IMPLEMENT ME: Define your functions here */
 int add (int a, int b) { printf ("Adding 'a' and 'b'\n"); return a + b; }
 int subtract (int a, int b) { printf ("Subtracting 'b' from 'a'\n"); return a - b; }
 int multiply (int a, int b) { printf ("Multiplying 'a' and 'b'\n"); return a * b; }
