@@ -26,7 +26,7 @@ int main (void)
 	printf("Specify the operation to perform (0 : add | 1 : subtract | 2 : Multiply | 3 : divide | 4 : exit): ");
 	scanf("%d", &user_op);
 	while (user_op != 4) {
-		printf("x=%d\n", (*func_arr[user_op])(a, b));
+		printf("x = %d\n", (*func_arr[user_op])(a, b));
 		printf("Operand 'a': %d | Operand 'b': %d\n", a, b);
 		printf("Specify the operation to perform (0 : add | 1 : subtract | 2 : Multiply | 3 : divide | 4 : exit): ");
 		scanf("%d", &user_op);
