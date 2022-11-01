@@ -13,7 +13,7 @@ int main (void)
 	// read user input
 	// while user_input != 4
 	// evaulate array of function pointers[user_input]
-	int (*func_arr[])(int a, int b) = {add, subtract, multiply, divide};
+	int (*func_arr[4])(int a, int b) = {add, subtract, multiply, divide};
 	int a, b;
 	a = 6;
 	b = 3;
